@@ -1,6 +1,8 @@
+import { FC } from 'react'
+
 import { Box } from '@chakra-ui/react'
 
-const Card: React.FC<{ href: string }> = ({ children, ...props }) => {
+export const Card: FC<{ href: string }> = ({ children, ...props }) => {
   return (
     <Box
       as="a"
@@ -20,5 +22,3 @@ const Card: React.FC<{ href: string }> = ({ children, ...props }) => {
     </Box>
   )
 }
-
-export default Card

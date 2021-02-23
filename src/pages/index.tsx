@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-import { Heading, Link, Text, Code, Flex, Image } from '@chakra-ui/react'
+import { Heading, Link, Text, Code, Flex } from '@chakra-ui/react'
 import Head from 'next/head'
 
-import Card from '~/components/Card'
+import { Card, Footer } from '~/components'
 
 const IndexPage: FC = () => {
   return (
@@ -77,33 +77,7 @@ const IndexPage: FC = () => {
         </Flex>
       </Flex>
 
-      <Flex
-        as="footer"
-        width="100%"
-        height="16"
-        justify="center"
-        align="center"
-        borderTop="1px"
-        borderColor="gray.300"
-      >
-        <Flex
-          as="a"
-          align="center"
-          direction="row"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image
-            ml="2"
-            height="1em"
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className="logo"
-          />
-        </Flex>
-      </Flex>
+      <Footer />
     </Flex>
   )
 }
