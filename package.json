@@ -1,5 +1,5 @@
 {
-  "name": "next-chakra-typescript",
+  "name": "next-chakra-ts-starter",
   "version": "1.0.0",
   "description": "Next.js + TypeScript + ESLint/Prettier + Chakra UI",
   "main": "index.js",
