@@ -5,13 +5,11 @@ module.exports = {
     jest: true
   },
   extends: [
-    'plugin:react/recommended',
+    'next',
     'standard',
     'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
     'prettier/@typescript-eslint',
     'prettier/standard',
-    'prettier/react',
     'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -22,10 +20,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint', 'react-hooks'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': 'error',
-    'space-before-function-paren': 'off',
     'react/prop-types': 'off',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -33,11 +30,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     'react/display-name': 'off',
     '@typescript-eslint/camelcase': 'off',
-    '@typescript-eslint/class-name-casing': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     'multiline-ternary': 'off',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
     'no-useless-constructor': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -71,13 +65,5 @@ module.exports = {
         }
       }
     ]
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {}
-    },
-    react: {
-      version: 'detect'
-    }
   }
 }

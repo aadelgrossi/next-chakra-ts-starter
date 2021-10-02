@@ -1,3 +1,4 @@
 module.exports = {
-  pageExtensions: ['tsx']
+  pageExtensions: ['tsx'],
+  extends: ['plugin:@next/next/recommended']
 }
