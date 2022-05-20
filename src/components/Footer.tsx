@@ -1,8 +1,7 @@
-import { FC } from 'react'
 
 import { Flex, Image } from '@chakra-ui/react'
 
-export const Footer: FC = () => {
+export const Footer = () => {
   return (
     <Flex
       as="footer"

@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 import { Card, Footer } from '~/components'
 
-const IndexPage: FC = () => {
+const IndexPage = () => {
   return (
     <Flex justify="center" align="center" minHeight="100vh" direction="column">
       <Head>

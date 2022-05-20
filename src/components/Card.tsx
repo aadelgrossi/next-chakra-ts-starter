@@ -1,8 +1,12 @@
-import { FC } from 'react'
+import { ReactNode } from 'react'
 
-import { Box } from '@chakra-ui/react'
+import { Box, LinkProps } from '@chakra-ui/react'
 
-export const Card: FC<{ href: string }> = ({ children, ...props }) => {
+interface CardProps extends Pick<LinkProps, 'href'> {
+  children: ReactNode
+}
+
+export const Card = ({ children, ...props }:CardProps) => {
   return (
     <Box
       as="a"
