@@ -1,4 +1,6 @@
 module.exports = {
-  pageExtensions: ['tsx'],
-  extends: ['plugin:@next/next/recommended']
+  extends: ['plugin:@next/next/recommended'],
+  experimental: {
+    appDir: true
+  }
 }

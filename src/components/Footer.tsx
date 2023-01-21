@@ -1,7 +1,8 @@
+'use client'
 
 import { Flex, Image } from '@chakra-ui/react'
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <Flex
       as="footer"
@@ -32,3 +33,5 @@ export const Footer = () => {
     </Flex>
   )
 }
+
+export default Footer

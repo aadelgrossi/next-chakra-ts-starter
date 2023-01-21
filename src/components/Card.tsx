@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react'
 
 import { Box, LinkProps } from '@chakra-ui/react'
@@ -6,7 +8,7 @@ interface CardProps extends Pick<LinkProps, 'href'> {
   children: ReactNode
 }
 
-export const Card = ({ children, ...props }:CardProps) => {
+const Card = ({ children, ...props }: CardProps) => {
   return (
     <Box
       as="a"
@@ -26,3 +28,5 @@ export const Card = ({ children, ...props }:CardProps) => {
     </Box>
   )
 }
+
+export default Card
