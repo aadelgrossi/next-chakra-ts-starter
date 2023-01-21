@@ -8,8 +8,7 @@ module.exports = {
     'next',
     'standard',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/standard',
+    'prettier',
     'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
